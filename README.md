@@ -1,5 +1,7 @@
 # PROJETO INCRÍVEL
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3450a6e0a02f4b7b99afb4d02fff38f6)](https://app.codacy.com/gh/giufiorenzano/empol?utm_source=github.com&utm_medium=referral&utm_content=giufiorenzano/empol&utm_campaign=Badge_Grade_Settings)
+
 Projeto de filmes da Alibin.
 Aqui nesse Readme você encontra alguns **padrões** a serem seguidos no código.
 
