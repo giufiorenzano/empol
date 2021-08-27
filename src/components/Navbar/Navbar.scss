@@ -4,13 +4,13 @@
 
 .navbar-nav {
 	.nav-item {
-		a {
-			text-decoration: none;
-			color: rgba(0, 0, 0, 0.5);
-			padding: 5px;
+    a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.5);
+      padding: 5px;
 		}
-		a:hover {
-			font-weight: bold;
+    a:hover {
+    font-weight: bold;
 		}
 	}
 }

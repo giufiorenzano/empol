@@ -21,6 +21,6 @@ export const SerieRegisterSlice = createSlice({
 	}
 })
 
-export default SerieRegisterSlice.reducer
+export default SerieRegisterSlice.reducer;
 
 

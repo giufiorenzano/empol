@@ -16,4 +16,4 @@ export const MenuOptions: Menu[] = [
 	{
 		name: 'Sair'
 	}
-]
+];
