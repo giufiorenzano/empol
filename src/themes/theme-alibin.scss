@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import '../../node_modules/bootstrap/scss/functions';
+@import 'functions';
+
+$font-family-sans-serif: 'Montserrat' !default;
+$font-family-monospace: $font-family-sans-serif !default;
+
+
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+
+
+@import 'variables';
+/*-----------------------------------------------
+|   Componentes
+-----------------------------------------------*/
+@import 'components';
+
