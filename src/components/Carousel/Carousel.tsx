@@ -1,9 +1,9 @@
-import { useReducer, useState, useEffect } from 'react';
-import { seriesList } from '../../helpers/helpers';
-import { SerieSchema } from '../../schemas/serie';
-import IconButton from '../IconButton/IconButton';
-import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
-import CarouselPropTypesDefault, { CarouselPropTypes } from './Carousel.schema';
+import { useReducer, useState, useEffect } from "react";
+import { seriesList } from "../../helpers/helpers";
+import { SerieSchema } from "../../schemas/serie";
+import IconButton from "../IconButton/IconButton";
+import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import CarouselPropTypesDefault, { CarouselPropTypes } from "./Carousel.schema";
 
 const Carousel = (props: CarouselPropTypes) => {
 	const [imagesList, setImagesList] = useState([]);
@@ -22,7 +22,7 @@ const Carousel = (props: CarouselPropTypes) => {
 	}, []);
 
 	const setIndex = (index: number[], type: string) => {
-		if (type === 'increment') {
+		if (type === "increment") {
 			return index.map((number) =>
 				number + 1 > imagesList.length - 1 ? 0 : number + 1
 			);
@@ -40,9 +40,9 @@ const Carousel = (props: CarouselPropTypes) => {
 	}, [imagesList, index]);
 
 	return (
-		<div className='empol-carousel d-flex flex-row no-wrap'>
+		<div className="empol-carousel d-flex flex-row no-wrap">
 			<IconButton
-				functionName={() => dispatch('decrement')}
+				functionName={() => dispatch("decrement")}
 				iconName={faAngleLeft}
 			/>
 
@@ -50,16 +50,16 @@ const Carousel = (props: CarouselPropTypes) => {
 				imgRender.map((image, index) => {
 					return (
 						<img
-							className='carousel-img'
+							className="carousel-img"
 							src={image}
-							alt='cartaz'
+							alt="cartaz"
 							key={index}
 						/>
 					);
 				})}
 
 			<IconButton
-				functionName={() => dispatch('increment')}
+				functionName={() => dispatch("increment")}
 				iconName={faAngleRight}
 			/>
 		</div>

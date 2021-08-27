@@ -29,6 +29,6 @@ const AllSeriesPage = () => {
 			</ul>
 		</div>
 	)
-}
+};
 
-export default AllSeriesPage
+export default AllSeriesPage;

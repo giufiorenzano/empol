@@ -3,7 +3,7 @@ import { Form, FormGroup, Label, Input, Row, Col, Button } from "reactstrap";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { CartazSchema, SerieSchema } from "../../schemas/serie";
 import { seriesList } from "../../helpers/helpers";
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch, useSelector } from "react-redux"
 import { SerieRegisterSlice } from "./SerieRegister.slice";
 import { RootState } from "../../store";
 import { useEffect } from "react";
@@ -36,7 +36,7 @@ const SerieRegisterForm = () => {
 				size: file.size,
 				type: file.type,
 			};
-			setValue('cartaz', finalimg);
+			setValue("cartaz", finalimg);
 		};
 	};
 
@@ -56,10 +56,10 @@ const SerieRegisterForm = () => {
 
 	 useEffect(() => {
 		if (getState.error === null && getState.register === true) {
-			window.alert('Série cadastrada!')
+			window.alert("Série cadastrada!")
 		}
 		if (getState.error !== null) {
-			setError('temporada', { message: 'Este número não é valido'}, {shouldFocus: true})
+			setError("temporada", { message: "Este número não é valido"}, {shouldFocus: true})
 		}
 
 	}, [getState])

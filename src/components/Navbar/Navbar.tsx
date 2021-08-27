@@ -7,31 +7,31 @@ import {
 	DropdownToggle,
 	DropdownMenu,
 	DropdownItem
-} from 'reactstrap';
-import { MenuOptions } from './Navbar.schema';
-import Logo from '../../assets/image/logo.png';
-import './Navbar.scss'
-import { useState } from 'react';
-import { Routes } from '../../routes';
-import { NavLink } from 'react-router-dom';
+} from "reactstrap";
+import { MenuOptions } from "./Navbar.schema";
+import Logo from "../../assets/image/logo.png";
+import "./Navbar.scss";
+import { useState } from "react";
+import { Routes } from "../../routes";
+import { NavLink } from "react-router-dom";
 
 const NavbarEmpol = () => {
 	const [isOpen, setIsOpen] = useState(false)
-	const [dropTitle, setDropTitle] = useState(isOpen ? 'Aberto' : 'Fechado')
+	const [dropTitle, setDropTitle] = useState(isOpen ? "Aberto" : "Fechado")
 
 	const handleClick = () => {
 		setIsOpen(!isOpen)
-		setDropTitle(isOpen ? 'Fechado' : 'Aberto')
+		setDropTitle(isOpen ? "Fechado" : "Aberto")
 	}
 
 
 	return (
-		<Navbar color='light' light expand='md'>
+		<Navbar color="light" light expand="md">
 			<NavbarBrand>
-				<img src={Logo} alt='logo' className='navbar-brand' />
+				<img src={Logo} alt="logo" className="navbar-brand" />
 			</NavbarBrand>
 
-			<Nav className='d-flex justify-content-between' navbar>
+			<Nav className="d-flex justify-content-between" navbar>
 				{Routes.map((route, index) =>
 					route.isNavLink ? (
 						<NavItem key={index}>
@@ -40,12 +40,12 @@ const NavbarEmpol = () => {
 								key={index}
 								isActive={(match, location) => {
 									if (match) {
-										if (location.pathname === '/')
+										if (location.pathname === "/")
 											return true;
 										if (match.url === location.pathname)
 											return true;
 										if (
-											match.url !== '' &&
+											match.url !== "" &&
 											location.pathname.includes(
 												match.url
 											)
@@ -62,13 +62,13 @@ const NavbarEmpol = () => {
 				)}
 			</Nav>
 
-			<Dropdown className='ml-auto' isOpen={isOpen} toggle={handleClick} title={dropTitle}>
+			<Dropdown className="ml-auto" isOpen={isOpen} toggle={handleClick} title={dropTitle}>
 				<DropdownToggle caret>userName</DropdownToggle>
 
 				<DropdownMenu right>
 					{MenuOptions.map((option) =>
 						option.divider ? (
-							<DropdownItem key='divider' divider />
+							<DropdownItem key="divider" divider />
 						) : (
 							<DropdownItem key={option.name}>{option.name}</DropdownItem>
 						)
@@ -79,4 +79,4 @@ const NavbarEmpol = () => {
 	);
 }
 
-export default NavbarEmpol
+export default NavbarEmpol;

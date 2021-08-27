@@ -9,4 +9,4 @@ const IconButton = (props: IconButtonPropTypes) => {
 	)
 }
 
-export default IconButton
+export default IconButton;
