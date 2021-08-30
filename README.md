@@ -48,7 +48,7 @@ Os componentes devem ser genéricos, sem muita lógica, e reutilizáveis.
 
 -   Variáveis declaradas sempre no começo.
 -   Uso de aspas simples.
--   Espaçamento em TAB SIZE 4.
+-   Espaçamento em SPACE SIZE 4.
 -   Comentários em cada função, sempre com /\*\*
 
 ### Padrão de Commit
@@ -70,4 +70,4 @@ Os componentes devem ser genéricos, sem muita lógica, e reutilizáveis.
 -   [ClassNames](https://www.npmjs.com/package/classnames)
 -   [FontAwesome](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react)
 -   [Playwright](https://playwright.dev/docs/intro)
--   [Redux](https://redux.js.org/introduction/getting-started)
+-   [Redux Tookit](https://redux-toolkit.js.org/)
