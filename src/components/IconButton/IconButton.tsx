@@ -1,12 +1,15 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { IconButtonPropTypes } from "./IconButton.schema"
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconButtonPropTypes } from './IconButton.schema';
 
 const IconButton = (props: IconButtonPropTypes) => {
-	return (
-		<button type='button' className='btn-lg btn' onClick={props.functionName}>
-			<FontAwesomeIcon icon={props.iconName} />
-		</button>
-	)
-}
+  const { functionName, iconName } = props;
+
+  return (
+    <button type="button" className="btn-lg btn" onClick={functionName}>
+      <FontAwesomeIcon icon={iconName} />
+    </button>
+  );
+};
 
 export default IconButton;

@@ -1,12 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit";
-import SerieRegisterReducer from './forms/SerieRegisterForm/SerieRegister.slice'
-
+import { configureStore } from '@reduxjs/toolkit';
+import SerieRegisterReducer from './forms/SerieRegisterForm/SerieRegister.slice';
 
 export const store = configureStore({
-	reducer: {
-		SerieRegisterReducer
-	}
-})
+  reducer: {
+    SerieRegisterReducer,
+  },
+});
 
-export type RootState = ReturnType<typeof store.getState>
-
+export type RootState = ReturnType<typeof store.getState>;
