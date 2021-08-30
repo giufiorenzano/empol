@@ -1,9 +1,9 @@
 export interface CarouselPropTypes {
-	length: number
-};
+  length: number
+}
 
 const CarouselPropTypesDefault: CarouselPropTypes = {
-	length: 3
+  length: 3,
 };
 
 export default CarouselPropTypesDefault;

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import NavbarEmpol from "./Navbar";
+import NavbarEmpol from "./NavbarEmpol";
 import { Router } from "react-router";
 import { createBrowserHistory } from "history";
 import userEvent from "@testing-library/user-event";

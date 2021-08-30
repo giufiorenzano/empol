@@ -1,9 +1,8 @@
+import React from 'react';
 import SerieRegisterForm from '../../forms/SerieRegisterForm/SerieRegister';
 
-const SerieRegisterPage = () => {
-	return (
-		<SerieRegisterForm />
-	)
-}
+const SerieRegisterPage = () => (
+  <SerieRegisterForm />
+);
 
-export default SerieRegisterPage
+export default SerieRegisterPage;

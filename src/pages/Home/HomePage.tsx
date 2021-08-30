@@ -1,9 +1,8 @@
-import Carousel from "../../components/Carousel/Carousel";
+import React from 'react';
+import Carousel from '../../components/Carousel/Carousel';
 
-const HomePage = () => {
-	return (
-		<Carousel length={3} />
-	)
-}
+const HomePage = () => (
+  <Carousel length={3} />
+);
 
-export default HomePage
+export default HomePage;

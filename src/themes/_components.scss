@@ -4,9 +4,9 @@
 }
 
 .empol-carousel {
-	svg {
+  svg {
 		width: 20px;
-	}
+  }
 }
 
 .carousel-img {
@@ -26,13 +26,13 @@
 
 .navbar-nav {
 	.nav-item {
-		a {
-			text-decoration: none;
-			color: rgba(0, 0, 0, 0.5);
-			padding: 5px;
+    a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.5);
+      padding: 5px;
 		}
-		a:hover {
-			font-weight: bold;
+    a:hover {
+    font-weight: bold;
 		}
 	}
 }
@@ -52,7 +52,7 @@ a {
 
 	}
 	&.series-list-item:hover {
-		font-weight: bold;
+    font-weight: bold;
 	}
 }
 
