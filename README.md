@@ -60,7 +60,7 @@ Os componentes devem ser genéricos, sem muita lógica, e reutilizáveis.
 
 ### Bibliotecas utilizadas
  - [Reactstrap](https://reactstrap.github.io/)
- - [React Query](https://react-query.tanstack.com/)
+ - [Axios](https://axios-http.com/)
  - [React Hook Form](https://react-hook-form.com/ts)
  - [React Router](https://reactrouter.com/web/guides/quick-start)
  - [ClassNames](https://www.npmjs.com/package/classnames)
