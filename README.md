@@ -1,67 +1,67 @@
-# PROJETO INCRÍVEL
+# EMPOL PROJECT
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3450a6e0a02f4b7b99afb4d02fff38f6)](https://app.codacy.com/gh/giufiorenzano/empol?utm_source=github.com&utm_medium=referral&utm_content=giufiorenzano/empol&utm_campaign=Badge_Grade_Settings)
 
-Projeto de filmes da Alibin.
-Aqui nesse Readme você encontra alguns **padrões** a serem seguidos no código.
+Movies project
+In this Readme you can find some **patterns** to be followed
 
-### TECNOLOGIAS UTILIZADAS
+### TECH
 
 -   [React](https://reactjs.org/)
 -   [Typescript](https://www.typescriptlang.org/)
 -   [SASS](https://sass-lang.com/documentation)
 
-## ESTRUTURA DE ARQUIVOS
+## FILES STRUCTURE
 
-1.  **/components** _Pasta com todos os componentes disponíveis._
-2.  **/forms** _Pasta com os formulários._
-3.  **/pages** _Pasta com todas as páginas._
-4.  **/helpers** _Pasta com funções de ajuda (utilizadas em mais de um lugar)_
-5.  **/themes** _Pasta com os temas_
+1.  **/components** _Folder with all available components._
+2.  **/forms** _Folder with all forms._
+3.  **/pages** _Folder with all pages._
+4.  **/helpers** _Folder with helper functions._
+5.  **/themes** _Folder with themes._
 
-## NOMENCLATURA
+## NOMENCLATURE
 
--   Tudo deve ser nomeado em **inglês**.
--   Os componentes, funções, constantes, devem ter **nome claro e seguindo sua funcionalidade**.
--   As _pastas gerais_ ficam com os nomes acima.
--   _Pasta_ de cada _componente_: em **Upper Camel Case** (ex: DropdownMenu)
--   Arquivos dos _componentes_: em **Upper Camel Case** (ex: DropdownMenu.scss)
--   Classes: em **Upper Camel Case** (ex: DropdownMenu)
--   _Funções, atributos, constantes_: em **Lower Camel Case** (ex: getList)
--   _Classes do CSS_: em **minúscula** e separando as palavras por **hífen** (ex: form-button)
+-   Everything must be named in **english**.
+-   Components, functions and constants must have **clear name that express its functionality**.
+-   _General folders_ have the names above.
+-   _Folder_ of each _component_: is in **Upper Camel Case** (ex: DropdownMenu)
+-   _Components files_: in **Upper Camel Case** (ex: DropdownMenu.scss)
+-   Classes: in **Upper Camel Case** (ex: DropdownMenu)
+-   _Functions, attributes, constants_: in **Lower Camel Case** (ex: getList)
+-   _CSS classes_: in **lower kebab case** (ex: form-button)
 
-## CRIANDO COMPONENTES
+## CREATING COMPONENTS
 
-Todo componente deve ter o `scss` relativo e o teste.
-Os componentes devem ser genéricos, sem muita lógica, e reutilizáveis.
+Every component must have its `scss` file and its test.
+Components must be generics, without much logic, and reusable. 
 
-### Estrutura básica de cada componente
+### Basic structure of components
 
--   `arquivo.tsx`  **Obrigatório**
--   `arquivo.scss`
--   `arquivo.test.tsx` **Obrigatório**
--   `arquivo.hook.tsx` _Implementação de Hooks_
--   `arquivo.schema.tsx` _Definição dos_ **tipos** _de dados de entrada_
--   `arquivo.slice.tsx` _Implementação do Redux_
+-   `file.tsx`  **Mandatory**
+-   `file.scss`
+-   `file.test.tsx` **Mandatory**
+-   `file.hook.tsx` _Hooks implementation_
+-   `file.schema.tsx` _Definition of_ **types**
+-   `file.slice.tsx` _Redux implementation_
 
-## OUTROS PADRÕES
+## OTHER PATTERNS
 
--   Variáveis declaradas sempre no começo.
--   Uso de aspas simples.
--   Espaçamento em SPACE SIZE 4.
--   Comentários em cada função, sempre com /\*\*
+- Variables always declared at the beginning.
+- Use of single quotes.
+- Spacing in SPACE SIZE 4.
+- Comments in each function, always with /\*\*
 
-### Padrão de Commit
+### Commit pattern
 
--   Seguir o padrão [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
--   Os commits devem ser do tipo: Docs, Fix, Feat ou Refactor.
--   Entre () colocar o que foi alterado, exemplo: comment, library, pipeline, component, page, form...
--   Mensagem clara sobre o que foi alterado no código.
--   Colocar componente específico ou página específica que foram alterados.
--   Finalizar com Issue: #_nome-da-tarefa_
--   Exemplo de commit: **'feat(component): Criação do componente Dropdown. Component: Dropdown. Issue: #FELL-20'**
+-   Follow this pattern [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+-   Commits types must be: Docs, Fix, Feat or Refactor.
+-   Between () you put what changed, example: comment, library, pipeline, component, page, form...
+-   Clear message about what changed.
+-   Specify what component or page changed.
+-   End the message with Issue: #_task-name_
+-   Example: **'feat(component): Created Dropdown component. Component: Dropdown. Issue: #FELL-20'**
 
-### Bibliotecas utilizadas
+### Libs on this project
 
 -   [Reactstrap](https://reactstrap.github.io/)
 -   [Axios](https://axios-http.com/)
